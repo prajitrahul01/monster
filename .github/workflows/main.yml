@@ -26,7 +26,7 @@ jobs:
       run: npm run build
  
     - name: Upload to S3
-      uses: prajitrahul01/monster
+      uses: prajitrahul01/monster@main
       with:
         args: --acl public-read
         env:
