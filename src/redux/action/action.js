@@ -28,7 +28,7 @@ export const fetchData = () => {
     console.log('fetchData')
     return (dispatch) => {
         dispatch(fetchDataRequest())
-        axios.get('http://localhost:8085/user/getAll')
+        axios.get('https://jsonplaceholder.typicode.com/users')
         .then(response=>{
             const data = response.data
             console.log("Response: ", response)
